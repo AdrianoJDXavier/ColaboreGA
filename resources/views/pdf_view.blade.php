@@ -85,38 +85,3 @@
 		<br>
 	</body>
 </html>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
- <title>{{ $titulo }}</title>
-</head>
-<style>
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-th, td {
-  padding: 5px;
-  text-align: left;
-}
-</style>
-<body>
-  <h1>{{ $cabecalho}}</h1>
-  <table style="width:100%">
-  <tr>
-    <th>Numero:</th>
-    <td>{{$numTor}}</td>
-  </tr>
-  <tr>
-    <th>Tipo:</th>
-    <td>{{$tipo}}</td>
-  </tr>
-  <tr>
-    <th>titulo:</th>
-    <td>{{$titulo}}</td>
-  </tr>
-</table>
-
-</body>
-</body>
-</html>
