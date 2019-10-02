@@ -22,6 +22,7 @@
                         <th><i class="arrow_carrot-right_alt"></i> Objeto</th>
                         <th><i class="icon_calendar"></i> Data Inicio</th>
                         <th><i class="icon_calendar"></i> Data Fim</th>
+                        <th><i class="icon_calendar"></i> Documentos</th>
                         <th><i class="icon_cog"></i> Ações</th>
                     </tr>
                     @foreach($contratos as $contrato)
@@ -31,6 +32,7 @@
                             <td>{{$contrato->Objeto_contrato}}</td>
                             <td>{{date( 'd/m/Y' , strtotime($contrato->data_inicio))}}</td>
                             <td style="background-color: <?php if($contrato->situacao == "Vencido") echo"#8B0000"; else echo"";?>; color: <?php if($contrato->situacao == "Vencido") echo"white"; else echo"";?>">{{date( 'd/m/Y' , strtotime($contrato->data_fim))}}</td>
+                            <td><a href='arquivo?id={{$contrato->numContrato}}'>{{$contrato->documentos}}</a></td>
                             <td>
                                 <div class="btn-group">
                                     <a class="btn btn-success" href="{{route('mostra', $contrato->id)}}"><i class="icon_pencil"></i></a>
